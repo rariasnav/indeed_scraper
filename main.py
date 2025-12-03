@@ -229,7 +229,6 @@ async def main():
                         job_detail = {
                            'jobTitle' : job_title.text,
                            'companyName' : company_name.text_all,
-                        #    'url' : url,
                         }
 
                         print(job_detail)
@@ -240,6 +239,7 @@ async def main():
                 
                 await asyncio.sleep(action_delay)
 
+                # next button click
                 next_button = await page.query_selector("a[data-testid='pagination-page-next'")
                 if next_button:
                     await next_button.click()
@@ -247,5 +247,6 @@ async def main():
                     exit_state = True
 
 if __name__ == '__main__':
+
 
     nodriver.loop().run_until_complete(main())
