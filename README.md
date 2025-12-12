@@ -17,7 +17,8 @@ job_list.csv
 
 /job_descriptions/ (each job description stored as a separate text file)
 
-🚀 Features 
+🚀 Features
+
 ✔️ Bypasses Cloudflare Turnstile Checkbox
 
 Automatically detects Cloudflare verification and simulates a real user click.
@@ -66,7 +67,9 @@ Clone the repository:
 
 git clone https://github.com/yourusername/indeed-scraper.git cd indeed-scraper
 
+
 Run the script:
+
 
 python main.py
 
